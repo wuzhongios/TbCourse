@@ -134,23 +134,9 @@
 		087E39DB1982C31800520CC5 /* TbCourse */ = {
 			isa = PBXGroup;
 			children = (
-				087E3A201982C54800520CC5 /* YFJLeftSwipeDeleteTableView.h */,
-				087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */,
+				087E3A231982C5E400520CC5 /* libs */,
 				087E3A041982C4EE00520CC5 /* en.lproj */,
-				087E3A071982C4EE00520CC5 /* hezi0.jpg */,
-				087E3A081982C4EE00520CC5 /* hezi1.jpg */,
-				087E3A091982C4EE00520CC5 /* hezi2.jpg */,
-				087E3A0B1982C4EE00520CC5 /* ItemCell.h */,
-				087E3A0C1982C4EE00520CC5 /* ItemCell.m */,
-				087E3A0D1982C4EE00520CC5 /* ItemModel.h */,
-				087E3A0E1982C4EE00520CC5 /* ItemModel.m */,
-				087E3A0F1982C4EE00520CC5 /* SVPullToRefresh.h */,
-				087E3A101982C4EE00520CC5 /* TbFavouriteViewController.h */,
-				087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */,
-				087E3A121982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.h */,
-				087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */,
-				087E3A141982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.h */,
-				087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */,
+				087E3A241982C5F100520CC5 /* favourite */,
 				087E39E41982C31800520CC5 /* AppDelegate.h */,
 				087E39E51982C31800520CC5 /* AppDelegate.m */,
 				087E39E71982C31800520CC5 /* Images.xcassets */,
@@ -194,6 +180,36 @@
 				087E3A051982C4EE00520CC5 /* InfoPlist.strings */,
 			);
 			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		087E3A231982C5E400520CC5 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				087E3A201982C54800520CC5 /* YFJLeftSwipeDeleteTableView.h */,
+				087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */,
+				087E3A0F1982C4EE00520CC5 /* SVPullToRefresh.h */,
+				087E3A121982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.h */,
+				087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */,
+				087E3A141982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.h */,
+				087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */,
+			);
+			name = libs;
+			sourceTree = "<group>";
+		};
+		087E3A241982C5F100520CC5 /* favourite */ = {
+			isa = PBXGroup;
+			children = (
+				087E3A071982C4EE00520CC5 /* hezi0.jpg */,
+				087E3A081982C4EE00520CC5 /* hezi1.jpg */,
+				087E3A091982C4EE00520CC5 /* hezi2.jpg */,
+				087E3A0B1982C4EE00520CC5 /* ItemCell.h */,
+				087E3A0C1982C4EE00520CC5 /* ItemCell.m */,
+				087E3A0D1982C4EE00520CC5 /* ItemModel.h */,
+				087E3A0E1982C4EE00520CC5 /* ItemModel.m */,
+				087E3A101982C4EE00520CC5 /* TbFavouriteViewController.h */,
+				087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */,
+			);
+			name = favourite;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
