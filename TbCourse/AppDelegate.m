@@ -1,14 +1,16 @@
 //
-//  AppDelegate.m
-//  TbCourse
+//  WzAppDelegate.m
+//  wuzhong_tbfav
 //
-//  Created by wuzhong on 14-7-26.
+//  Created by wuzhong on 14-7-24.
 //  Copyright (c) 2014年 com. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "TbFavouriteViewController.h"
 
 @implementation AppDelegate
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
@@ -16,6 +18,11 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    TbFavouriteViewController * viewController = [[TbFavouriteViewController alloc] init];
+    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    self.window.rootViewController = navigationController;
+    
     return YES;
 }
 
@@ -24,6 +31,8 @@
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
     // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
 }
+
+
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {

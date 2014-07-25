@@ -19,6 +19,16 @@
 		087E39F11982C31800520CC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 087E39D91982C31800520CC5 /* UIKit.framework */; };
 		087E39F91982C31800520CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 087E39F71982C31800520CC5 /* InfoPlist.strings */; };
 		087E39FB1982C31800520CC5 /* TbCourseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E39FA1982C31800520CC5 /* TbCourseTests.m */; };
+		087E3A161982C4EE00520CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 087E3A051982C4EE00520CC5 /* InfoPlist.strings */; };
+		087E3A171982C4EE00520CC5 /* hezi0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 087E3A071982C4EE00520CC5 /* hezi0.jpg */; };
+		087E3A181982C4EE00520CC5 /* hezi1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 087E3A081982C4EE00520CC5 /* hezi1.jpg */; };
+		087E3A191982C4EE00520CC5 /* hezi2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 087E3A091982C4EE00520CC5 /* hezi2.jpg */; };
+		087E3A1B1982C4EE00520CC5 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A0C1982C4EE00520CC5 /* ItemCell.m */; };
+		087E3A1C1982C4EE00520CC5 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A0E1982C4EE00520CC5 /* ItemModel.m */; };
+		087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */; };
+		087E3A1E1982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */; };
+		087E3A1F1982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */; };
+		087E3A221982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,23 @@
 		087E39F61982C31800520CC5 /* TbCourseTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TbCourseTests-Info.plist"; sourceTree = "<group>"; };
 		087E39F81982C31800520CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		087E39FA1982C31800520CC5 /* TbCourseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TbCourseTests.m; sourceTree = "<group>"; };
+		087E3A061982C4EE00520CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		087E3A071982C4EE00520CC5 /* hezi0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hezi0.jpg; sourceTree = "<group>"; };
+		087E3A081982C4EE00520CC5 /* hezi1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hezi1.jpg; sourceTree = "<group>"; };
+		087E3A091982C4EE00520CC5 /* hezi2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = hezi2.jpg; sourceTree = "<group>"; };
+		087E3A0B1982C4EE00520CC5 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		087E3A0C1982C4EE00520CC5 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		087E3A0D1982C4EE00520CC5 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		087E3A0E1982C4EE00520CC5 /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
+		087E3A0F1982C4EE00520CC5 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
+		087E3A101982C4EE00520CC5 /* TbFavouriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbFavouriteViewController.h; sourceTree = "<group>"; };
+		087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbFavouriteViewController.m; sourceTree = "<group>"; };
+		087E3A121982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVInfiniteScrolling.h"; sourceTree = "<group>"; };
+		087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
+		087E3A141982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
+		087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		087E3A201982C54800520CC5 /* YFJLeftSwipeDeleteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFJLeftSwipeDeleteTableView.h; sourceTree = "<group>"; };
+		087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFJLeftSwipeDeleteTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +134,23 @@
 		087E39DB1982C31800520CC5 /* TbCourse */ = {
 			isa = PBXGroup;
 			children = (
+				087E3A201982C54800520CC5 /* YFJLeftSwipeDeleteTableView.h */,
+				087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */,
+				087E3A041982C4EE00520CC5 /* en.lproj */,
+				087E3A071982C4EE00520CC5 /* hezi0.jpg */,
+				087E3A081982C4EE00520CC5 /* hezi1.jpg */,
+				087E3A091982C4EE00520CC5 /* hezi2.jpg */,
+				087E3A0B1982C4EE00520CC5 /* ItemCell.h */,
+				087E3A0C1982C4EE00520CC5 /* ItemCell.m */,
+				087E3A0D1982C4EE00520CC5 /* ItemModel.h */,
+				087E3A0E1982C4EE00520CC5 /* ItemModel.m */,
+				087E3A0F1982C4EE00520CC5 /* SVPullToRefresh.h */,
+				087E3A101982C4EE00520CC5 /* TbFavouriteViewController.h */,
+				087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */,
+				087E3A121982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.h */,
+				087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */,
+				087E3A141982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.h */,
+				087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */,
 				087E39E41982C31800520CC5 /* AppDelegate.h */,
 				087E39E51982C31800520CC5 /* AppDelegate.m */,
 				087E39E71982C31800520CC5 /* Images.xcassets */,
@@ -142,6 +186,14 @@
 				087E39F71982C31800520CC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		087E3A041982C4EE00520CC5 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				087E3A051982C4EE00520CC5 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,7 +271,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				087E3A171982C4EE00520CC5 /* hezi0.jpg in Resources */,
+				087E3A181982C4EE00520CC5 /* hezi1.jpg in Resources */,
 				087E39E01982C31800520CC5 /* InfoPlist.strings in Resources */,
+				087E3A161982C4EE00520CC5 /* InfoPlist.strings in Resources */,
+				087E3A191982C4EE00520CC5 /* hezi2.jpg in Resources */,
 				087E39E81982C31800520CC5 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +295,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				087E3A1B1982C4EE00520CC5 /* ItemCell.m in Sources */,
 				087E39E61982C31800520CC5 /* AppDelegate.m in Sources */,
+				087E3A221982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m in Sources */,
+				087E3A1E1982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
+				087E3A1F1982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m in Sources */,
+				087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */,
+				087E3A1C1982C4EE00520CC5 /* ItemModel.m in Sources */,
 				087E39E21982C31800520CC5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,6 +337,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				087E39F81982C31800520CC5 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		087E3A051982C4EE00520CC5 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				087E3A061982C4EE00520CC5 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -437,6 +507,7 @@
 				087E3A001982C31800520CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		087E3A011982C31800520CC5 /* Build configuration list for PBXNativeTarget "TbCourseTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +516,7 @@
 				087E3A031982C31800520CC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
