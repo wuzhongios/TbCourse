@@ -62,7 +62,6 @@
     }];
     
     [self.tableView registerClass:[ItemCell class] forCellReuseIdentifier:@"Cell"];
-
     
 }
 
