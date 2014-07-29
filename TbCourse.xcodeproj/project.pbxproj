@@ -28,7 +28,6 @@
 		087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */; };
 		087E3A1E1982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */; };
 		087E3A1F1982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */; };
-		087E3A221982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,8 +72,6 @@
 		087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		087E3A141982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
-		087E3A201982C54800520CC5 /* YFJLeftSwipeDeleteTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YFJLeftSwipeDeleteTableView.h; sourceTree = "<group>"; };
-		087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YFJLeftSwipeDeleteTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,8 +182,6 @@
 		087E3A231982C5E400520CC5 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				087E3A201982C54800520CC5 /* YFJLeftSwipeDeleteTableView.h */,
-				087E3A211982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m */,
 				087E3A0F1982C4EE00520CC5 /* SVPullToRefresh.h */,
 				087E3A121982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.h */,
 				087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */,
@@ -313,7 +308,6 @@
 			files = (
 				087E3A1B1982C4EE00520CC5 /* ItemCell.m in Sources */,
 				087E39E61982C31800520CC5 /* AppDelegate.m in Sources */,
-				087E3A221982C54800520CC5 /* YFJLeftSwipeDeleteTableView.m in Sources */,
 				087E3A1E1982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				087E3A1F1982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m in Sources */,
 				087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */,

@@ -10,7 +10,6 @@
 #import "ItemCell.h"
 #import "ItemModel.h"
 #import "SVPullToRefresh.h"
-#import "YFJLeftSwipeDeleteTableView.h"
 
 @interface TbFavouriteViewController ()
 
@@ -37,11 +36,11 @@
     self.title = @"my favourites";
     
     CGRect frame = self.view.bounds;
-    self.tableView = [[YFJLeftSwipeDeleteTableView alloc] initWithFrame:frame];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height - 40) style:UITableViewStylePlain];
     
     [self setupDataSource];
     
-//    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, super.window.frame.size.width, self.window.frame.size.height - 20) style:UITableViewStylePlain];
+//    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, super.window.frame.size.width, self.window.frame.size.height - 40) style:UITableViewStylePlain];
     
     self.tableView.delegate = self;
     
@@ -63,6 +62,30 @@
     
     [self.tableView registerClass:[ItemCell class] forCellReuseIdentifier:@"Cell"];
     
+//     [tableView setEditing:YES animated:YES];
+
+    
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width - 80, frame.size.height - 40, 50, 40)];
+    label.userInteractionEnabled = YES;
+    UITapGestureRecognizer *tapGesture =
+    [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelTap:)];
+    
+    [label addGestureRecognizer:tapGesture];
+    [label setText:@"编辑"];
+    label.font = [UIFont  fontWithName:@"Arial Rounded MT Bold" size:(16.0)];
+    label.textColor = [UIColor grayColor];
+    [self.view addSubview:label];
+    
+}
+
+//编辑按钮事件
+- (void)labelTap:(id)sender{
+    if(self.tableView.editing == YES){
+        [self.tableView setEditing:NO animated:YES];
+    }
+    else{
+        [self.tableView setEditing:YES animated:YES];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -184,6 +207,8 @@
     
     [cell setData:model];
     
+//     [tableView setEditing:YES animated:YES];
+    
     return cell;
     
     
@@ -207,6 +232,12 @@
     else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
     }
+}
+
+//单元格返回的编辑风格，包括删除 添加 和 默认  和不可编辑三种风格
+-(UITableViewCellEditingStyle)tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewCellEditingStyleDelete;
 }
 
 

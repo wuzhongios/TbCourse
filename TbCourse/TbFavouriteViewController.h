@@ -16,4 +16,7 @@
 
 @property (nonatomic, strong) NSMutableArray *dataSource;
 
+
+- (void)labelTap:(id)sender;
+
 @end
