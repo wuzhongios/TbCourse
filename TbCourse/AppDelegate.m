@@ -8,6 +8,11 @@
 
 #import "AppDelegate.h"
 #import "TbFavouriteViewController.h"
+#import "TbWeitaoViewController.h"
+#import "TbIndexViewController.h"
+#import "TbMsgboxTableViewController.h"
+#import "NetworkTableViewController.h"
+#import "tbsearch/TbSearchViewController.h"
 
 @implementation AppDelegate
 
@@ -19,12 +24,93 @@
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    TbFavouriteViewController * viewController = [[TbFavouriteViewController alloc] init];
-    UINavigationController * navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
-    self.window.rootViewController = navigationController;
+    UITabBarController *tabController = [[UITabBarController alloc] init ];
+    
+    [self.window setRootViewController:tabController];
+    
+    
+    UINavigationController *navi1 = [[UINavigationController alloc] initWithRootViewController:
+                                     [[TbFavouriteViewController alloc ] init]];
+    
+    UITabBarItem *item1 = [[ UITabBarItem alloc] initWithTitle: @"fav"
+                                                        image: [UIImage imageNamed:@"tabConfig"]
+                                                        tag:1001];
+    
+    UINavigationController *navi2 = [[ UINavigationController alloc ] initWithRootViewController:
+                                     [[TbWeitaoViewController alloc ] init]];
+    UITabBarItem *item2 = [[ UITabBarItem alloc] initWithTitle: @"weitao"
+                                                         image: [UIImage imageNamed:@"tabWei"]
+                                                           tag:1001];
+    
+    UINavigationController *navi3 = [[ UINavigationController alloc] initWithRootViewController:
+                                     [[TbIndexViewController alloc] init]];
+    UITabBarItem *item3 = [[ UITabBarItem alloc] initWithTitle: @"index"
+                                                         image: [UIImage imageNamed:@"tabMain"]
+                                                           tag:1001];
+
+    
+    
+    
+    UITabBarItem *item4 = [[ UITabBarItem alloc] initWithTitle: @"network"
+                                                         image: [UIImage imageNamed:@"tabDiscovery"]
+                                                           tag:1002];
+    UINavigationController *navi4 = [[ UINavigationController alloc] initWithRootViewController:
+                                     [[ NetworkTableViewController alloc] init]];
+    
+    UITabBarItem *item5 = [[ UITabBarItem alloc] initWithTitle: @"search"
+                                                         image: [UIImage imageNamed:@"iconfont-search" ]
+                                                           tag:1002];
+    UINavigationController *navi5 = [[ UINavigationController alloc] initWithRootViewController:
+                                     [[ TbSearchViewController alloc] init]];
+
+    
+    [navi1 setTabBarItem:item1];
+    [navi2 setTabBarItem:item2];
+    [navi3 setTabBarItem:item3];
+    [navi4 setTabBarItem:item4];
+    [navi5 setTabBarItem:item5];
+    
+    [tabController setViewControllers: @[navi5, navi4, navi3, navi2, navi1]];
+    
+
+    
+//    UIViewController *root = [[UIViewController alloc] init];
+//    
+//    UIButton *btn = [[UIButton alloc] initWithFrame: CGRectMake(100, 100, 100, 50)];
+//    
+//    [root.view addSubview: btn];
+//    
+////    btn.backgroundColor = [UIColor grayColor];
+//    
+////    btn.titleLabel.text = @"push";
+//    [btn setTitle:@"push" forState:UIControlStateNormal];
+//    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+////    btn.titleLabel.textColor = [UIColor redColor];
+//    
+//    [btn addTarget:self action:@selector(popWindow) forControlEvents:(UIControlEventAllTouchEvents)];
+//    
+//    
+//    
+//    
+//    
+//    
+//     self.navi = [[UINavigationController alloc] initWithRootViewController:root];
+    
+    //same
+    // self.window.rootViewController = navigationController;
+//    [self.window setRootViewController: self.navi];
+    
+//    navigationController pushViewController:<#(UIViewController *)#> animated:<#(BOOL)#>
     
     return YES;
 }
+
+- (void) popWindow{
+    TbFavouriteViewController * viewController = [[TbFavouriteViewController alloc] init];
+    [self.navi pushViewController:viewController animated:YES];
+}
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

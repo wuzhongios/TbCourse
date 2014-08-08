@@ -33,10 +33,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    self.title = @"my favourites";
+    self.title = @"fav";
     
     CGRect frame = self.view.bounds;
-    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height - 40) style:UITableViewStylePlain];
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(frame.origin.x, frame.origin.y, frame.size.width, frame.size.height - 80) style:UITableViewStylePlain];
     
     [self setupDataSource];
     
@@ -65,7 +65,7 @@
 //     [tableView setEditing:YES animated:YES];
 
     
-    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width - 80, frame.size.height - 40, 50, 40)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(frame.size.width - 80, frame.size.height - 85, 50, 40)];
     label.userInteractionEnabled = YES;
     UITapGestureRecognizer *tapGesture =
     [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(labelTap:)];
@@ -110,6 +110,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [self.tableView deselectRowAtIndexPath:indexPath animated:NO];
 }
+
+
 
 #pragma mark - Actions
 
