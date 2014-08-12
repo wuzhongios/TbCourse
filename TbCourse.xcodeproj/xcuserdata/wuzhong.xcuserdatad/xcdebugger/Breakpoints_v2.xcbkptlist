@@ -234,11 +234,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TbCourse/tbsearch/TbSearchViewController.m"
-            timestampString = "429148858.487032"
+            timestampString = "429515034.685876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "127"
-            endingLineNumber = "127"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "-receiveData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -250,11 +250,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TbCourse/tbsearch/TbSearchViewController.m"
-            timestampString = "429148858.487032"
+            timestampString = "429515034.685876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "131"
-            endingLineNumber = "131"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
             landmarkName = "-receiveData:"
             landmarkType = "5">
          </BreakpointContent>
@@ -282,11 +282,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TbCourse/tbsearch/TbSearchViewController.m"
-            timestampString = "429148523.105505"
+            timestampString = "429515034.685876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -298,11 +298,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TbCourse/tbsearch/TbSearchViewController.m"
-            timestampString = "429148523.105505"
+            timestampString = "429515034.685876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>
@@ -314,11 +314,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TbCourse/tbsearch/TbSearchViewController.m"
-            timestampString = "429148858.487032"
+            timestampString = "429515034.685876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "228"
-            endingLineNumber = "228"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
             landmarkName = "-updateItems"
             landmarkType = "5">
          </BreakpointContent>
@@ -346,11 +346,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "TbCourse/tbsearch/TbSearchViewController.m"
-            timestampString = "429148523.105505"
+            timestampString = "429515034.685876"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "-viewDidLoad"
             landmarkType = "5">
          </BreakpointContent>

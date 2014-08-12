@@ -44,6 +44,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    CGRect frame = self.view.bounds;
+    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(frame.origin.x, 60, frame.size.width, frame.size.height - 80) style:UITableViewStylePlain];
+    
+    //    self.tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 20, super.window.frame.size.width, self.window.frame.size.height - 40) style:UITableViewStylePlain];
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    [self.view addSubview:self.tableView];
+    
     // Do any additional setup after loading the view.
     
 //    UIInputView* input = [[UIInputView alloc] initWithFrame:CGRectMake(10, 10, 100, 20)
