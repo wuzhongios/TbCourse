@@ -60,11 +60,11 @@
 		087E39F91982C31800520CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 087E39F71982C31800520CC5 /* InfoPlist.strings */; };
 		087E39FB1982C31800520CC5 /* TbCourseTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E39FA1982C31800520CC5 /* TbCourseTests.m */; };
 		087E3A161982C4EE00520CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 087E3A051982C4EE00520CC5 /* InfoPlist.strings */; };
-		087E3A1B1982C4EE00520CC5 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A0C1982C4EE00520CC5 /* ItemCell.m */; };
-		087E3A1C1982C4EE00520CC5 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A0E1982C4EE00520CC5 /* ItemModel.m */; };
 		087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */; };
 		087E3A1E1982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */; };
 		087E3A1F1982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */; };
+		08CC4A0B199B37AC0039E030 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC4A08199B37AC0039E030 /* ItemCell.m */; };
+		08CC4A0C199B37AC0039E030 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC4A0A199B37AC0039E030 /* ItemModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -158,10 +158,6 @@
 		087E39F81982C31800520CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		087E39FA1982C31800520CC5 /* TbCourseTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TbCourseTests.m; sourceTree = "<group>"; };
 		087E3A061982C4EE00520CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
-		087E3A0B1982C4EE00520CC5 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
-		087E3A0C1982C4EE00520CC5 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
-		087E3A0D1982C4EE00520CC5 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
-		087E3A0E1982C4EE00520CC5 /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
 		087E3A0F1982C4EE00520CC5 /* SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVPullToRefresh.h; sourceTree = "<group>"; };
 		087E3A101982C4EE00520CC5 /* TbFavouriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbFavouriteViewController.h; sourceTree = "<group>"; };
 		087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbFavouriteViewController.m; sourceTree = "<group>"; };
@@ -169,6 +165,10 @@
 		087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		087E3A141982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		08CC4A07199B37AC0039E030 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
+		08CC4A08199B37AC0039E030 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
+		08CC4A09199B37AC0039E030 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
+		08CC4A0A199B37AC0039E030 /* ItemModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +314,10 @@
 		08507BFE1993C26000294A24 /* item */ = {
 			isa = PBXGroup;
 			children = (
+				08CC4A07199B37AC0039E030 /* ItemCell.h */,
+				08CC4A08199B37AC0039E030 /* ItemCell.m */,
+				08CC4A09199B37AC0039E030 /* ItemModel.h */,
+				08CC4A0A199B37AC0039E030 /* ItemModel.m */,
 				08507BCA19936A0F00294A24 /* ItemTableViewCell.h */,
 				08507BCB19936A0F00294A24 /* ItemTableViewCell.m */,
 			);
@@ -430,10 +434,6 @@
 		087E3A241982C5F100520CC5 /* favourite */ = {
 			isa = PBXGroup;
 			children = (
-				087E3A0B1982C4EE00520CC5 /* ItemCell.h */,
-				087E3A0C1982C4EE00520CC5 /* ItemCell.m */,
-				087E3A0D1982C4EE00520CC5 /* ItemModel.h */,
-				087E3A0E1982C4EE00520CC5 /* ItemModel.m */,
 				087E3A101982C4EE00520CC5 /* TbFavouriteViewController.h */,
 				087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */,
 			);
@@ -554,12 +554,12 @@
 			files = (
 				08507BE41993868D00294A24 /* AFHTTPRequestOperation.m in Sources */,
 				08507BCC19936A0F00294A24 /* ItemTableViewCell.m in Sources */,
+				08CC4A0C199B37AC0039E030 /* ItemModel.m in Sources */,
 				080DD268198E806A0066E1D9 /* TbMsgboxTableViewController.m in Sources */,
 				08507BFB19938EFE00294A24 /* SearchModel.m in Sources */,
 				08157F0F198D422E009ADDF4 /* TbIndexViewController.m in Sources */,
 				08507BF01993872F00294A24 /* TbSearchViewController.m in Sources */,
 				08507BBD1993510200294A24 /* NetworkTableViewController.m in Sources */,
-				087E3A1B1982C4EE00520CC5 /* ItemCell.m in Sources */,
 				08211430198A9DDB0052E0F5 /* TbWei2ViewController.m in Sources */,
 				08507BE61993868D00294A24 /* AFHTTPSessionManager.m in Sources */,
 				0821142D198A965D0052E0F5 /* TbWeitaoViewController.m in Sources */,
@@ -571,10 +571,10 @@
 				08507BE91993868D00294A24 /* AFURLConnectionOperation.m in Sources */,
 				08507BEB1993868D00294A24 /* AFURLResponseSerialization.m in Sources */,
 				087E3A1F1982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m in Sources */,
+				08CC4A0B199B37AC0039E030 /* ItemCell.m in Sources */,
 				08507BEA1993868D00294A24 /* AFURLRequestSerialization.m in Sources */,
 				087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */,
 				08507BCF19936B3C00294A24 /* WebviewViewController.m in Sources */,
-				087E3A1C1982C4EE00520CC5 /* ItemModel.m in Sources */,
 				08211433198A9DE80052E0F5 /* TbWei3ViewController.m in Sources */,
 				087E39E21982C31800520CC5 /* main.m in Sources */,
 				08507BE51993868D00294A24 /* AFHTTPRequestOperationManager.m in Sources */,

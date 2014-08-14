@@ -14,6 +14,8 @@
 
 @interface TbIndexViewController ()
 
+@property NSFileManager *fileManager;
+
 @end
 
 @implementation TbIndexViewController
@@ -41,17 +43,115 @@
     
     [imgLable addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openMsgBox)]];
     
-    
-    
-//    UIBarButtonItem *leftBarButtonItem=[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(clickView:)];
-
-//
-
-//    [imgLable addTarget:self action:@selector(openMsgBox:) forControlEvents:UIControlEventTouchDown];
-
-//    msgboxItem add
-    
     [self.navigationItem setRightBarButtonItem:msgboxItem];
+    
+    self.fileManager = [NSFileManager defaultManager];
+    
+    [self testBlock];
+    
+    [self testAsyn];
+    
+    [self testDataCache];
+
+    
+    
+}
+
+- (void) testBlock{
+    UILabel *__lable = [[UILabel alloc] initWithFrame:CGRectMake(100, 100, 200, 100)];
+    __lable.text = @"hello world";
+    
+    [self.view addSubview:__lable];
+    
+    [UIView  animateWithDuration:1 delay:0 options:UIViewAnimationOptionCurveEaseInOut animations:^{
+        __lable.text = @"hellow rold";
+    } completion:^(BOOL finished) {
+        __lable.text = @"abcd";
+    }];
+    
+    [UIView animateWithDuration:1 //时长
+                          delay:0 //延迟时间
+                        options:UIViewAnimationOptionTransitionFlipFromLeft//动画效果
+                     animations:^{
+                         //动画设置区域
+                         //                         __lable.backgroundColor=[UIColor blueColor];
+                         __lable.frame=CGRectMake(50, 50, 200, 200);
+                         __lable.alpha=0.5;
+                         
+                     } completion:^(BOOL finish){
+                         //动画结束时调用
+                         //............
+                         //                         __lable.backgroundColor=[UIColor whiteColor];
+                         [UIView animateWithDuration:1 //时长
+                                               delay:0 //延迟时间
+                                             options:UIViewAnimationOptionTransitionFlipFromLeft//动画效果
+                                          animations:^{
+                                              //动画设置区域
+                                              //                         __lable.backgroundColor=[UIColor blueColor];
+                                              __lable.frame=CGRectMake(100,100,200,100);
+                                              __lable.alpha=1.0;
+                                          } completion:^(BOOL finish){
+                                              //动画结束时调用
+                                              //............
+                                              
+                                              
+                                          }];
+                         
+                         
+                         __lable.frame=CGRectMake(100,100,200,100);
+                         __lable.alpha=1.0;
+                     }];
+}
+
+- (void) testAsyn{
+    UIImageView *imageview = [[UIImageView alloc] initWithFrame:CGRectMake(10, 200, 300, 100)];
+    [self.view addSubview:imageview];
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        
+        NSString *url =@"http://gtms02.alicdn.com/tps/i2/TB1O5UqFVXXXXbWXXXXrVZt0FXX-640-200.jpg";
+        NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+        
+//        NSString md5 = [url md5];
+        
+        NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+        
+        NSString *first = [paths objectAtIndex:0];
+        
+        NSLog(@"current dirct path is %@ , path is %@",[self.fileManager currentDirectoryPath],paths);
+        
+        NSString *docPath = [first stringByAppendingPathComponent:@"wuzhongcache"];
+        
+        if([self.fileManager fileExistsAtPath:docPath]){
+            
+            [self.fileManager removeItemAtPath:docPath error:nil];
+            
+        }
+
+        [self.fileManager createDirectoryAtPath:docPath withIntermediateDirectories:YES attributes:nil error:nil];
+            
+//            NSLog(@"%@",docPath);
+            NSString* filePath = [docPath stringByAppendingString:@"/test.jpg"];
+            [self.fileManager createFileAtPath:filePath contents:data attributes: nil];
+            NSLog(@"file path is %@",filePath);
+            
+        
+        
+        
+        UIImage *image = [[UIImage alloc] initWithData:data];
+        
+        
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            imageview.image = image;
+        });
+    });
+}
+
+
+- (void) testDataCache{
+
+
     
 
 }

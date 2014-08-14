@@ -91,6 +91,7 @@
     self.keywords = @[@"iphone4s",@"iphone5s",@"xiaomi4",@"mx3",@"nexus5"];
     self.index = 1;
     
+    
 //    NSLog(@"hello %@",@"hello");
 }
 

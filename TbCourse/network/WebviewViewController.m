@@ -120,4 +120,9 @@
 
 }
 
+
+- (void)dealloc{
+    NSLog(@"delloc");
+}
+
 @end

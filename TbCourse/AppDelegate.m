@@ -70,37 +70,8 @@
     [navi4 setTabBarItem:item4];
     [navi5 setTabBarItem:item5];
     
-    [tabController setViewControllers: @[navi5, navi4, navi3, navi2, navi1]];
+    [tabController setViewControllers: @[navi3, navi5, navi4,  navi2, navi1]];
     
-
-    
-//    UIViewController *root = [[UIViewController alloc] init];
-//    
-//    UIButton *btn = [[UIButton alloc] initWithFrame: CGRectMake(100, 100, 100, 50)];
-//    
-//    [root.view addSubview: btn];
-//    
-////    btn.backgroundColor = [UIColor grayColor];
-//    
-////    btn.titleLabel.text = @"push";
-//    [btn setTitle:@"push" forState:UIControlStateNormal];
-//    [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-////    btn.titleLabel.textColor = [UIColor redColor];
-//    
-//    [btn addTarget:self action:@selector(popWindow) forControlEvents:(UIControlEventAllTouchEvents)];
-//    
-//    
-//    
-//    
-//    
-//    
-//     self.navi = [[UINavigationController alloc] initWithRootViewController:root];
-    
-    //same
-    // self.window.rootViewController = navigationController;
-//    [self.window setRootViewController: self.navi];
-    
-//    navigationController pushViewController:<#(UIViewController *)#> animated:<#(BOOL)#>
     
     return YES;
 }
