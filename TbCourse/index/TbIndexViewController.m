@@ -10,6 +10,7 @@
 #import "Image+Label.h"
 #import "TbMsgboxTableViewController.h"
 #import "NetworkTableViewController.h"
+#import "BrowserViewController.h"
 
 
 @interface TbIndexViewController ()
@@ -32,6 +33,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
     // Do any additional setup after loading the view.
     self.title = @"Index";
     
@@ -54,7 +56,47 @@
     [self testDataCache];
 
     
+    UILabel *click = [[UILabel alloc] initWithFrame:CGRectMake(50, 340, 200, 50)];
+    click.text = @"open browser";
+    click.font = [UIFont boldSystemFontOfSize:24];
+    click.layer.borderWidth = 2;
+    click.textAlignment = NSTextAlignmentCenter;
+    click.layer.borderColor = [UIColor grayColor].CGColor;
     
+    
+    UITapGestureRecognizer *tapGestureRecognizer = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(openBrowser)];
+    tapGestureRecognizer.numberOfTapsRequired = 1;
+    [click addGestureRecognizer:tapGestureRecognizer];
+    click.userInteractionEnabled = YES;
+    
+    [self.view addSubview:click];
+    
+//    UIButton *btn = [[UIButton alloc] initWithFrame:CGRectMake(100, 300, 30, 60)];
+//    UILabel *lable = [UILabel alloc] initWithFrame:<#(CGRect)#>
+//    btn.titleLabel =
+    
+    
+}
+
+
+- (void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    self.tabBarController.tabBar.hidden = NO;
+    self.navigationController.navigationBar.hidden = NO;
+    
+    [self openBrowser];
+}
+
+- (void) openBrowser{
+
+    NSLog(@"open browser");
+    
+    BrowserViewController *browser = [[BrowserViewController alloc] init];
+    self.tabBarController.tabBar.hidden = YES;
+    self.navigationController.navigationBar.hidden = YES;
+    
+    [self.navigationController pushViewController:browser  animated: NO];
+
 }
 
 - (void) testBlock{
@@ -134,13 +176,9 @@
             NSString* filePath = [docPath stringByAppendingString:@"/test.jpg"];
             [self.fileManager createFileAtPath:filePath contents:data attributes: nil];
             NSLog(@"file path is %@",filePath);
-            
-        
         
         
         UIImage *image = [[UIImage alloc] initWithData:data];
-        
-        
         
         dispatch_async(dispatch_get_main_queue(), ^{
             imageview.image = image;

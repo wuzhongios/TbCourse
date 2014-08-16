@@ -26,6 +26,8 @@
 		0821142D198A965D0052E0F5 /* TbWeitaoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0821142C198A965D0052E0F5 /* TbWeitaoViewController.m */; };
 		08211430198A9DDB0052E0F5 /* TbWei2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0821142F198A9DDB0052E0F5 /* TbWei2ViewController.m */; };
 		08211433198A9DE80052E0F5 /* TbWei3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08211432198A9DE80052E0F5 /* TbWei3ViewController.m */; };
+		0849C4D5199DF3C800F417DB /* BrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0849C4D4199DF3C800F417DB /* BrowserViewController.m */; };
+		0849C4D8199ECB4500F417DB /* BrowserCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 0849C4D7199ECB4500F417DB /* BrowserCache.m */; };
 		08507BBD1993510200294A24 /* NetworkTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507BBC1993510200294A24 /* NetworkTableViewController.m */; };
 		08507BC11993590E00294A24 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 08507BC01993590E00294A24 /* JSONKit.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		08507BC3199364DA00294A24 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08507BC2199364DA00294A24 /* SDWebImage.framework */; };
@@ -63,6 +65,7 @@
 		087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A111982C4EE00520CC5 /* TbFavouriteViewController.m */; };
 		087E3A1E1982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */; };
 		087E3A1F1982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */; };
+		08BDF2D0199F2667004E2CF7 /* FileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 08BDF2CF199F2667004E2CF7 /* FileUtils.m */; };
 		08CC4A0B199B37AC0039E030 /* ItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC4A08199B37AC0039E030 /* ItemCell.m */; };
 		08CC4A0C199B37AC0039E030 /* ItemModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 08CC4A0A199B37AC0039E030 /* ItemModel.m */; };
 /* End PBXBuildFile section */
@@ -103,6 +106,10 @@
 		0821142F198A9DDB0052E0F5 /* TbWei2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbWei2ViewController.m; sourceTree = "<group>"; };
 		08211431198A9DE80052E0F5 /* TbWei3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TbWei3ViewController.h; sourceTree = "<group>"; };
 		08211432198A9DE80052E0F5 /* TbWei3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TbWei3ViewController.m; sourceTree = "<group>"; };
+		0849C4D3199DF3C800F417DB /* BrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserViewController.h; sourceTree = "<group>"; };
+		0849C4D4199DF3C800F417DB /* BrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserViewController.m; sourceTree = "<group>"; };
+		0849C4D6199ECB4500F417DB /* BrowserCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BrowserCache.h; sourceTree = "<group>"; };
+		0849C4D7199ECB4500F417DB /* BrowserCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BrowserCache.m; sourceTree = "<group>"; };
 		08507BBB1993510200294A24 /* NetworkTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkTableViewController.h; path = ../NetworkTableViewController.h; sourceTree = "<group>"; };
 		08507BBC1993510200294A24 /* NetworkTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkTableViewController.m; path = ../NetworkTableViewController.m; sourceTree = "<group>"; };
 		08507BBF1993590E00294A24 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
@@ -165,6 +172,8 @@
 		087E3A131982C4EE00520CC5 /* UIScrollView+SVInfiniteScrolling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVInfiniteScrolling.m"; sourceTree = "<group>"; };
 		087E3A141982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SVPullToRefresh.h"; sourceTree = "<group>"; };
 		087E3A151982C4EE00520CC5 /* UIScrollView+SVPullToRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SVPullToRefresh.m"; sourceTree = "<group>"; };
+		08BDF2CE199F2666004E2CF7 /* FileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtils.h; sourceTree = "<group>"; };
+		08BDF2CF199F2667004E2CF7 /* FileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileUtils.m; sourceTree = "<group>"; };
 		08CC4A07199B37AC0039E030 /* ItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemCell.h; sourceTree = "<group>"; };
 		08CC4A08199B37AC0039E030 /* ItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ItemCell.m; sourceTree = "<group>"; };
 		08CC4A09199B37AC0039E030 /* ItemModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ItemModel.h; sourceTree = "<group>"; };
@@ -252,6 +261,19 @@
 				08211432198A9DE80052E0F5 /* TbWei3ViewController.m */,
 			);
 			path = weitao;
+			sourceTree = "<group>";
+		};
+		0849C4D2199DDBC100F417DB /* browser */ = {
+			isa = PBXGroup;
+			children = (
+				0849C4D3199DF3C800F417DB /* BrowserViewController.h */,
+				0849C4D4199DF3C800F417DB /* BrowserViewController.m */,
+				0849C4D6199ECB4500F417DB /* BrowserCache.h */,
+				0849C4D7199ECB4500F417DB /* BrowserCache.m */,
+				08BDF2CE199F2666004E2CF7 /* FileUtils.h */,
+				08BDF2CF199F2667004E2CF7 /* FileUtils.m */,
+			);
+			path = browser;
 			sourceTree = "<group>";
 		};
 		08507BBE1993527600294A24 /* network */ = {
@@ -360,6 +382,7 @@
 		087E39DB1982C31800520CC5 /* TbCourse */ = {
 			isa = PBXGroup;
 			children = (
+				0849C4D2199DDBC100F417DB /* browser */,
 				08507BFE1993C26000294A24 /* item */,
 				08507BFC1993B30D00294A24 /* webview */,
 				08507BED1993871900294A24 /* tbsearch */,
@@ -557,6 +580,7 @@
 				08CC4A0C199B37AC0039E030 /* ItemModel.m in Sources */,
 				080DD268198E806A0066E1D9 /* TbMsgboxTableViewController.m in Sources */,
 				08507BFB19938EFE00294A24 /* SearchModel.m in Sources */,
+				0849C4D5199DF3C800F417DB /* BrowserViewController.m in Sources */,
 				08157F0F198D422E009ADDF4 /* TbIndexViewController.m in Sources */,
 				08507BF01993872F00294A24 /* TbSearchViewController.m in Sources */,
 				08507BBD1993510200294A24 /* NetworkTableViewController.m in Sources */,
@@ -575,7 +599,9 @@
 				08507BEA1993868D00294A24 /* AFURLRequestSerialization.m in Sources */,
 				087E3A1D1982C4EE00520CC5 /* TbFavouriteViewController.m in Sources */,
 				08507BCF19936B3C00294A24 /* WebviewViewController.m in Sources */,
+				08BDF2D0199F2667004E2CF7 /* FileUtils.m in Sources */,
 				08211433198A9DE80052E0F5 /* TbWei3ViewController.m in Sources */,
+				0849C4D8199ECB4500F417DB /* BrowserCache.m in Sources */,
 				087E39E21982C31800520CC5 /* main.m in Sources */,
 				08507BE51993868D00294A24 /* AFHTTPRequestOperationManager.m in Sources */,
 				08507BE81993868D00294A24 /* AFSecurityPolicy.m in Sources */,
